@@ -1,5 +1,5 @@
 # hack_site_template
-A portfolio site template themed around the hacktoberfest website using HTML, CSS and JS
+A portfolio site template themed around the hacktoberfest website using Gatsby.
 
 ---
 # Hacktoberfest 2022
