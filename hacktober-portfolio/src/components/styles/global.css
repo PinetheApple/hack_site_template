@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@font-face {
+    font-family: "Vanguard";
+    src: url('./fonts/webfontkit-20221008-021259/fontspring-demo-vanguardcf-heavy-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20221008-021259/fontspring-demo-vanguardcf-heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --c1: black;
+    --c2: blue;
+    --c3: violet;
+    --c4: purple;
+    --c5: red;
+    --f1: JetBrains Mono, monospace;
+    --f2: Vanguard;
+    --f3: 'Courier New', Courier, monospace 
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--f1);
+    font-size: 60px;
+    text-transform: uppercase;
+}
