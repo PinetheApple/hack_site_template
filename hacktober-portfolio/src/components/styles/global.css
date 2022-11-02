@@ -1,26 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 @font-face {
-    font-family: "Vanguard";
-    src: url('./fonts/webfontkit-20221008-021259/fontspring-demo-vanguardcf-heavy-webfont.woff2') format('woff2'),
-         url('./fonts/webfontkit-20221008-021259/fontspring-demo-vanguardcf-heavy-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Vanguard";
+	src: url("./fonts/webfontkit-20221008-021259/fontspring-demo-vanguardcf-heavy-webfont.woff2")
+			format("woff2"),
+		url("./fonts/webfontkit-20221008-021259/fontspring-demo-vanguardcf-heavy-webfont.woff")
+			format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
-:root{
-    --c1: black;
-    --c2: blue;
-    --c3: violet;
-    --c4: purple;
-    --c5: red;
-    --f1: JetBrains Mono, monospace;
-    --f2: Vanguard;
-    --f3: 'Courier New', Courier, monospace 
+:root {
+	--c1: black;
+	--c2: blue;
+	--c3: violet;
+	--c4: purple;
+	--bg-color: black;
+	--link: rgb(229, 225, 230);
+	--link-hover: green;
+	--button-color: rgb(23, 15, 30);
+	--f1: JetBrains Mono, monospace;
+	--f2: Vanguard;
+	--f3: "Courier New", Courier, monospace;
 }
 
 * {
-    box-sizing: border-box;
-    font-family: var(--f1);
-    font-size: 60px;
-    text-transform: uppercase;
+	box-sizing: border-box;
+	font-family: var(--f1);
+	text-transform: uppercase;
+}
+
+body {
+	max-width: 1300px;
+	margin: 0 auto;
+	background-color: var(--bg-color);
+	scroll-behavior: smooth;
+}
+
+::selection {
+	color: #b4ff39;
+	background: #170f1e;
+}
+
+a {
+	text-decoration: none;
+	color: var(--link);
+	opacity: 0.75;
+}
+
+a:hover {
+	opacity: 1;
+	text-shadow: 0.3px 0.3px var(--link);
+}
+
+button {
+	color: var(--button-color);
+	padding: 0.8rem 1.2rem;
+	clip-path: polygon(
+		12px 0px,
+		100% 0px,
+		100% 72%,
+		calc(100% - 12px) 100%,
+		0px 100%,
+		0px 12px
+	);
+	border: none;
+	font-size: inherit;
+}
+
+button:hover {
+	cursor: pointer;
 }
